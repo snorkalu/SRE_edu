@@ -1,8 +1,8 @@
 # SRE_edu
 
 
-- [ ] Write ansible playbook to deploy postrgres using patroni setup
-- [ ] Deploy etcd, patroni, postgres and Haproxy balancer insance
+- [X] Write ansible playbook to deploy postrgres using patroni setup
+- [X] Deploy etcd, patroni, postgres and Haproxy balancer insance
 - [ ] Develop helm chart for deployment of api to k8s
 
 ```mermaid
@@ -13,3 +13,7 @@ deployment scheme:
     C[postgres_2]-->E[patroni_2];
     D[patroni_1]-->E[patroni_2];
 ```
+
+ansible command
+
+```ansible-playbook -i inventory deploy_pgcluster.yml```
