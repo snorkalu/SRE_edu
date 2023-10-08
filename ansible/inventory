@@ -5,7 +5,7 @@
 
 # if with_haproxy_load_balancing: true
 [balancers]
-10.0.10.6 ansible_host=77.105.185.122
+10.0.10.6 ansible_host=77.105.185.122 
 
 # PostgreSQL nodes
 [master]
