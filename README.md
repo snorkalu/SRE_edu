@@ -1,4 +1,5 @@
 # SRE_edu
+## task1
 
 
 - [X] Write ansible playbook to deploy postrgres using patroni setup
@@ -13,9 +14,9 @@ Deployment scheme
 
 based on https://github.com/vitabaks/postgresql_cluster
 
-all host are described in inventory
+all hosts are described in inventory
 
-run from host having access to hosts.
+run playbook from the host having access to all hosts
 
 useful commands:
 
