@@ -17,3 +17,7 @@ deployment scheme:
 ansible command
 
 ```ansible-playbook -i inventory deploy_pgcluster.yml```
+
+
+helm
+helm install api-student78 api-student78 

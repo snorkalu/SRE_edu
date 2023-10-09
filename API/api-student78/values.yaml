@@ -39,9 +39,14 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+variables:
+   CONNECTIONSTRINGS__PGCONNECTION: server=77.105.185.121; port=5000; database=weather; user id=mydb-user; password=mydb-user-pass;
+   ASPNETCORE_URLS: http://*:8080
+
 service:
   type: ClusterIP
   port: 8080
+
 
 ingress:
   enabled: true
@@ -96,3 +101,14 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+env:
+  - name: DOTNET_ENVIRONMENT
+    value: Development
+
+config:
+  dbhost: "77.105.185.121"
+  dbport: "5000"
+  dbname: "weather"
+  dbuser: "mydb-user"
+  dbpass: "mydb-user-pass"

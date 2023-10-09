@@ -1,18 +1,18 @@
 [etcd_cluster]  
+10.0.10.2 ansible_host=77.105.185.122
+10.0.10.6 ansible_host=91.185.85.8
 10.0.10.7 ansible_host=77.105.185.123
-10.0.10.3 ansible_host=77.105.185.120
-10.0.10.2 ansible_host=77.105.185.117
 
 # if with_haproxy_load_balancing: true
 [balancers]
-10.0.10.6 ansible_host=77.105.185.122 
+10.0.10.4 ansible_host=77.105.185.121 
 
 # PostgreSQL nodes
 [master]
-10.0.10.5 ansible_host=77.105.185.121 hostname=pg1-78 postgresql_exists=false
+10.0.10.3 ansible_host=91.185.84.13 hostname=pg1-78 postgresql_exists=false
 
 [replica]
-10.0.10.4 ansible_host=91.185.86.169 hostname=pg2-78 postgresql_exists=false
+10.0.10.5 ansible_host=91.185.86.162 hostname=pg2-78 postgresql_exists=false
 
 
 [postgres_cluster:children]
