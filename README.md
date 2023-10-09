@@ -3,18 +3,14 @@
 
 - [X] Write ansible playbook to deploy postrgres using patroni setup
 - [X] Deploy etcd, patroni, postgres and Haproxy balancer insance
-- [ ] Develop helm chart for deployment of api to k8s
+- [X] Develop helm chart for deployment of api to k8s
+- [X] Create DB using script from api docker, add records
 
-```mermaid
-deployment scheme:
-    A[balancer]-->B[postgres_1];
-    A[balancer]-->C[postgres_2];
-    B[postgres_1]-->D[patroni_1];
-    C[postgres_2]-->E[patroni_2];
-    D[patroni_1]-->E[patroni_2];
-```
+Deployment scheme
+[![Alt text]([https://static.tildacdn.com/tild3835-6161-4534-a135-323838653733/image.png)]
 
-ansible command
+Ansible playbook
+
 
 ```ansible-playbook -i inventory deploy_pgcluster.yml```
 
