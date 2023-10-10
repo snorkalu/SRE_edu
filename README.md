@@ -32,3 +32,7 @@ useful commands:\
 ```helm install api-student78 api-student78```\
 ```helm upgrade api-student78 api-student78```\
 
+**Test **
+
+```curl -H "Host: forecast.local" http://91.185.85.213/cities```
+
